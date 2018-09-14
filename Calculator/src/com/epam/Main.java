@@ -28,6 +28,14 @@ public class Main {
         }
     }
 
+    /**
+     * Returns the value of the first two attributes depending on the third attribute
+     *
+     * @param firstNumber   the first value
+     * @param secondNumber   the second value
+     * @param operation the math symbol
+     * @return the result
+     */
     public static String calculateResult(double firstNumber, double secondNumber, String operation) {
         String result = "Result is: ";
         if (operation.equals("+")) {
