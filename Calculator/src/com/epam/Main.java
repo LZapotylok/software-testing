@@ -28,7 +28,6 @@ public class Main {
         }
     }
 
-
     public static String calculateResult(double firstNumber, double secondNumber, String operation) {
         String result = "Result is: ";
         if (operation.equals("+")) {
