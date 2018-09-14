@@ -2,9 +2,6 @@ package com.epam;
 
 import java.util.Scanner;
 
-/**
- * Created by olga.zapotylok on 12.09.2018 in 01:11.
- */
 public class Main {
 
     public static void main(String[] args) {
