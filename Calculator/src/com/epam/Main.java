@@ -42,6 +42,5 @@ public class Main {
             result += "invalid data, try again";
         }
         return result;
-
     }
 }
