@@ -24,7 +24,7 @@ public class Main {
             if (operation.equals("exit")) {
                 break;
             }
-            System.out.println(calculateResult(firstNumber, secondNumber, operation));
+            System.out.println(calculate(firstNumber, secondNumber, operation));
         }
     }
 
@@ -36,7 +36,7 @@ public class Main {
      * @param operation the math symbol
      * @return the result
      */
-    public static String calculateResult(double firstNumber, double secondNumber, String operation) {
+    public static String calculate(double firstNumber, double secondNumber, String operation) {
         String result = "Result is: ";
         if (operation.equals("+")) {
             result += firstNumber + secondNumber;
