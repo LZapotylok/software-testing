@@ -29,16 +29,16 @@ public class Main {
     }
 
 
-    public static String calculateResult(double fNumber, double sNumber, String operation) {
+    public static String calculateResult(double firstNumber, double sNumber, String operation) {
         String result = "Result is: ";
         if (operation.equals("+")) {
-            result += fNumber + sNumber;
+            result += firstNumber + sNumber;
         } else if (operation.equals("-")) {
-            result += fNumber - sNumber;
+            result += firstNumber - sNumber;
         } else if (operation.equals("*")) {
-            result += fNumber * sNumber;
+            result += firstNumber * sNumber;
         } else if (operation.equals("/")) {
-            result += sNumber != 0 ? fNumber / sNumber : "Dividing by zero is undefined";
+            result += sNumber != 0 ? firstNumber / sNumber : "Dividing by zero is undefined";
         } else {
             result += "invalid data, try again";
         }
