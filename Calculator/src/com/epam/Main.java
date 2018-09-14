@@ -24,12 +24,12 @@ public class Main {
             if (operation.equals("exit")) {
                 break;
             }
-            System.out.println(calculate(firstNumber, secondNumber, operation));
+            System.out.println(calculateResult(firstNumber, secondNumber, operation));
         }
     }
 
-    
-    public static String calculate(double fNumber, double sNumber, String operation) {
+
+    public static String calculateResult(double fNumber, double sNumber, String operation) {
         String result = "Result is: ";
         if (operation.equals("+")) {
             result += fNumber + sNumber;
