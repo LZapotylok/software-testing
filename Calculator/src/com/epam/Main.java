@@ -2,6 +2,12 @@ package com.epam;
 
 import java.util.Scanner;
 
+/**
+ * The class performs basic
+ * numeric operations such as the addition, substring
+ * multiplying and division.
+ */
+
 public class Main {
 
     public static void main(String[] args) {
