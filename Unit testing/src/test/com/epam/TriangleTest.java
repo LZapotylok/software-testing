@@ -37,22 +37,22 @@ public class TriangleTest {
     }
 
     @Test
-    public void testIsTriangleExistWithStringValue() {
-        Assert.assertTrue(Triangle.isTriangleExist(8, Double.parseDouble("12.5"), 5));
+    public void testIsTriangleExistWithNanAndMinExponent() {
+        Assert.assertTrue(Triangle.isTriangleExist(8, Double.MIN_EXPONENT, 5));
     }
 
     @Test
-    public void testIsTriangleExistWithNotValisStringValue() {
-        Assert.assertFalse(Triangle.isTriangleExist(8, Double.parseDouble("18.5"), 5));
+    public void testIsTriangleExistWithNanAndMaxExponent() {
+        Assert.assertFalse(Triangle.isTriangleExist(8, Double.MAX_EXPONENT, 5));
     }
 
     @Test
-    public void testIsTriangleExistWithMaxDoubleValues() {
-        Assert.assertTrue(Triangle.isTriangleExist(Double.MAX_VALUE, Double.MAX_VALUE, Double.MAX_VALUE));
+    public void testIsTriangleExistWithMaxDoubleValue() {
+        Assert.assertTrue(Triangle.isTriangleExist(Double.MAX_VALUE, 13.9, 7.9));
     }
 
     @Test
-    public void testIsTriangleExistWithMinDoubleValues() {
-        Assert.assertTrue(Triangle.isTriangleExist(Double.MIN_VALUE, Double.MIN_VALUE, Double.MIN_VALUE));
+    public void testIsTriangleExistWithMinDoubleValue() {
+        Assert.assertTrue(Triangle.isTriangleExist(13.8, 12, Double.MIN_VALUE));
     }
 }
